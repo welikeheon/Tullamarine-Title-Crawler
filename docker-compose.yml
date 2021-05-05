@@ -1,0 +1,9 @@
+version: "3"
+services:
+  Tullamarine-URL-Parser:
+    image: "107920888619.dkr.ecr.ap-northeast-2.amazonaws.com/pete-url-parser:latest"
+    environment:
+      secret_name: ${{SECRET_NAME}}
+      AWS_ACCESS_KEY_ID: ${{AWS_ACCESS_KEY_ID}}
+      AWS_SECRET_ACCESS_KEY: ${{AWS_SECRET_ACCESS_KEY}}
+    restart: always
